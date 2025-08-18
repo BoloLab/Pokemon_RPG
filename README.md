@@ -12,7 +12,7 @@ Este espaço serve como **wiki** e **repositório de arquivos** do RPG de Pokém
 
 ## ✨ Créditos
 - Narrador/Mestre:  
-- Jogadores: [Kiwi](https://github.com/HelloKiw1), Gabu 
+- Jogadores: [Kiwi](https://github.com/HelloKiw1), [Gabu](https://github.com/Dev-Gabu) 
 - Sistema base: **Pokémon Tabletop Adventures / PTA3** 
 
 ---
