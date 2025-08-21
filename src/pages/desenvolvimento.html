@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site em desenvolvimento</title>
+  <style>
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: #ffffff; /* fundo branco */
+      color: #111827;
+      display:grid;
+      place-items:center;
+    }
+    .wrap{ text-align:center; padding:32px; }
+
+    .logo{
+      width:120px; height:120px; display:block; margin:0 auto 20px;
+      animation: spin 10s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .logo { animation: none; }
+    }
+
+    h1{ margin:0 0 8px; font-size: clamp(24px, 4vw, 40px); letter-spacing:.3px; }
+    p{ margin:0; opacity:.7 }
+
+    .badge{
+      display:inline-block; margin-top:12px; padding:6px 10px;
+      border:1px solid rgba(0,0,0,.15); border-radius:999px; font-size:12px; opacity:.75;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-label="Página em desenvolvimento">
+    <img src="../assets/img/pokebola_preta.png" class="logo" alt="Logo do site girando" />
+    <h1>Site em desenvolvimento Avançado</h1>
+    <p>Estamos preparando algo especial. Volte em breve.</p>
+    <div class="badge">© <span id="year"></span></div>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
